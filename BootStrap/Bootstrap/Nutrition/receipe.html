@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nutrition Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plan.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="receipe.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="recipes" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Healthy Recipes</h2>
+            <div class="row">
+                <!-- Recipe 1 - Green Smoothie -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="smoothie.jpg" class="card-img-top" alt="Green Smoothie">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Smoothie</h5>
+                            <p class="card-text">A refreshing blend of spinach, kale, and fruits.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#smoothieModal">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Recipe 2 - Quinoa Salad -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="quinoa.jpg" class="card-img-top" alt="Quinoa Salad">
+                        <div class="card-body">
+                            <h5 class="card-title">Quinoa Salad</h5>
+                            <p class="card-text">A nutritious mix of quinoa, veggies, and olive oil.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quinoaModal">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Recipe 3 - Grilled Chicken -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="chicken.jpg" class="card-img-top" alt="Grilled Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Chicken</h5>
+                            <p class="card-text">High-protein grilled chicken with herbs and spices.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chickenModal">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Green Smoothie Recipe -->
+        <div class="modal fade" id="smoothieModal" tabindex="-1" aria-labelledby="smoothieModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="smoothieModalLabel">Green Smoothie Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Ingredients:</h6>
+                        <ul>
+                            <li>1 cup spinach</li>
+                            <li>1 cup kale</li>
+                            <li>1 banana</li>
+                            <li>1/2 cup apple juice</li>
+                            <li>1/2 cup water</li>
+                            <li>Ice cubes (optional)</li>
+                        </ul>
+                        <h6>Instructions:</h6>
+                        <ol>
+                            <li>Wash spinach and kale leaves thoroughly.</li>
+                            <li>Place spinach, kale, and banana in a blender.</li>
+                            <li>Add apple juice, water, and ice cubes.</li>
+                            <li>Blend until smooth. Pour into a glass and enjoy your refreshing smoothie!</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Quinoa Salad Recipe -->
+        <div class="modal fade" id="quinoaModal" tabindex="-1" aria-labelledby="quinoaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="quinoaModalLabel">Quinoa Salad Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Ingredients:</h6>
+                        <ul>
+                            <li>1 cup quinoa</li>
+                            <li>1 cucumber, diced</li>
+                            <li>1 bell pepper, diced</li>
+                            <li>1/4 cup red onion, finely chopped</li>
+                            <li>2 tbsp olive oil</li>
+                            <li>2 tbsp lemon juice</li>
+                            <li>Salt and pepper to taste</li>
+                        </ul>
+                        <h6>Instructions:</h6>
+                        <ol>
+                            <li>Rinse quinoa under cold water and cook according to package instructions.</li>
+                            <li>In a large bowl, combine the quinoa, cucumber, bell pepper, and onion.</li>
+                            <li>Drizzle with olive oil and lemon juice. Season with salt and pepper.</li>
+                            <li>Toss everything together and serve chilled.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Grilled Chicken Recipe -->
+        <div class="modal fade" id="chickenModal" tabindex="-1" aria-labelledby="chickenModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="chickenModalLabel">Grilled Chicken Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Ingredients:</h6>
+                        <ul>
+                            <li>4 chicken breasts</li>
+                            <li>1 tbsp olive oil</li>
+                            <li>1 tbsp garlic powder</li>
+                            <li>1 tsp paprika</li>
+                            <li>Salt and pepper to taste</li>
+                        </ul>
+                        <h6>Instructions:</h6>
+                        <ol>
+                            <li>Preheat your grill to medium-high heat.</li>
+                            <li>Rub chicken breasts with olive oil and season with garlic powder, paprika, salt, and pepper.</li>
+                            <li>Grill the chicken for about 6-7 minutes per side or until fully cooked.</li>
+                            <li>Remove from the grill and let it rest for a few minutes before slicing and serving.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Nutrition Hub</h5>
+                    <p>Your ultimate guide to healthy living and balanced diets.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="plan.html" class="text-white">Nutrition Plans</a></li>
+                        <li><a href="receipe.html" class="text-white">Recipes</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="pathare3232tejas@gmail.com" class="text-white">pathare3232tejas@gmail.com</a></p>
+                    <p>Phone: 9767512879</p>
+                    <p>Address: 101 Mandar Residencey 2, Warje, Pune,India</p>
+                </div>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="social-links mt-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/TejasPathare/" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="mt-4">
+                <p>&copy; 2024 Nutrition Hub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome Icons (For Social Media Icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    
+        <!-- Bootstrap JavaScript and Dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap JavaScript and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    
+</body>
+</html>

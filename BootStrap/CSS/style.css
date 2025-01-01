@@ -1,0 +1,39 @@
+li{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    border: solid blueviolet;
+    background-color: blue;
+    border-radius: 10px;
+}
+#li{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    border: solid yellowgreen;
+    background-color: orangered;
+    border-radius: 10px;
+}
+#li1{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    border: solid yellow;
+    background-color: chocolate;
+    border-radius: 10px;
+}
+#list{
+    li{
+        display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    border: solid violet;
+    background-color:purple;
+    border-radius: 10px;
+    }
+
+}

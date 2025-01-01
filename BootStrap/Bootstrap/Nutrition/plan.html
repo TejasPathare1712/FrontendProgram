@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nutrition Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plan.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="receipe.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="plans" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Nutrition Plans</h2>
+            <div class="row">
+                <!-- Keto Diet Plan -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="keto.jpg" class="card-img-top" alt="Keto Diet">
+                        <div class="card-body">
+                            <h5 class="card-title">Keto Diet</h5>
+                            <p class="card-text">A low-carb, high-fat diet to burn fat efficiently.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ketoModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Vegan Diet Plan -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="vegan.jpg" class="card-img-top" alt="Vegan Diet">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegan Diet</h5>
+                            <p class="card-text">A plant-based diet focusing on sustainability and health.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#veganModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- High Protein Diet Plan -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="highprotein.jpg" class="card-img-top" alt="High Protein Diet">
+                        <div class="card-body">
+                            <h5 class="card-title">High Protein Diet</h5>
+                            <p class="card-text">Ideal for muscle building and metabolism support.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proteinModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Keto Diet Plan -->
+        <div class="modal fade" id="ketoModal" tabindex="-1" aria-labelledby="ketoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ketoModalLabel">Keto Diet Plan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>What is the Keto Diet?</h6>
+                        <p>The Keto diet is a low-carb, high-fat diet that can help burn fat more effectively. It involves reducing your carbohydrate intake and replacing it with fats, putting your body into a state of ketosis, where it burns fat for energy.</p>
+                        <h6>Benefits of the Keto Diet:</h6>
+                        <ul>
+                            <li>Increased fat burning</li>
+                            <li>Improved mental clarity</li>
+                            <li>Stable blood sugar levels</li>
+                            <li>Reduced hunger cravings</li>
+                        </ul>
+                        <h6>Sample Keto Meal Plan:</h6>
+                        <ul>
+                            <li>Breakfast: Avocado and eggs</li>
+                            <li>Lunch: Grilled chicken salad with olive oil dressing</li>
+                            <li>Dinner: Salmon with roasted vegetables</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Vegan Diet Plan -->
+        <div class="modal fade" id="veganModal" tabindex="-1" aria-labelledby="veganModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="veganModalLabel">Vegan Diet Plan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>What is the Vegan Diet?</h6>
+                        <p>The Vegan diet is a plant-based diet that excludes all animal products, including meat, dairy, and eggs. It focuses on whole grains, legumes, vegetables, and fruits to provide the necessary nutrients for a healthy lifestyle.</p>
+                        <h6>Benefits of the Vegan Diet:</h6>
+                        <ul>
+                            <li>Improved heart health</li>
+                            <li>Lower risk of chronic diseases</li>
+                            <li>Environmental sustainability</li>
+                            <li>Weight loss and better digestion</li>
+                        </ul>
+                        <h6>Sample Vegan Meal Plan:</h6>
+                        <ul>
+                            <li>Breakfast: Oatmeal with almond milk and berries</li>
+                            <li>Lunch: Chickpea salad with quinoa and tahini dressing</li>
+                            <li>Dinner: Vegan lentil stew with vegetables</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for High Protein Diet Plan -->
+        <div class="modal fade" id="proteinModal" tabindex="-1" aria-labelledby="proteinModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="proteinModalLabel">High Protein Diet Plan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>What is the High Protein Diet?</h6>
+                        <p>The High Protein diet focuses on increasing protein intake to support muscle growth, repair, and metabolism. This diet typically includes protein-rich foods like meat, poultry, eggs, fish, and plant-based protein sources such as beans and tofu.</p>
+                        <h6>Benefits of the High Protein Diet:</h6>
+                        <ul>
+                            <li>Supports muscle building and recovery</li>
+                            <li>Boosts metabolism and fat loss</li>
+                            <li>Improves overall body composition</li>
+                            <li>Regulates appetite and blood sugar levels</li>
+                        </ul>
+                        <h6>Sample High Protein Meal Plan:</h6>
+                        <ul>
+                            <li>Breakfast: Scrambled eggs with spinach and feta</li>
+                            <li>Lunch: Grilled chicken with steamed broccoli and quinoa</li>
+                            <li>Dinner: Salmon with roasted sweet potatoes and asparagus</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Nutrition Hub</h5>
+                    <p>Your ultimate guide to healthy living and balanced diets.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="plan.html" class="text-white">Nutrition Plans</a></li>
+                        <li><a href="receipe.html" class="text-white">Recipes</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="pathare3232tejas@gmail.com" class="text-white">pathare3232tejas@gmail.com</a></p>
+                    <p>Phone: 9767512879</p>
+                    <p>Address: 101 Mandar Residencey 2, Warje, Pune,India</p>
+                </div>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="social-links mt-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/TejasPathare/" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="mt-4">
+                <p>&copy; 2024 Nutrition Hub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome Icons (For Social Media Icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    
+        <!-- Bootstrap JavaScript and Dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap JavaScript and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

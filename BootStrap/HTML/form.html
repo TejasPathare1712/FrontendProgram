@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1 style="text-align: center; background-color:chartreuse">HTML BASIC FORMS</h1>
+    <form action="">
+       <!-- <label for="txtname">Enter your name</label><input type="text" id="txtname"><br>
+        <label for="txtaddress">Enter Your Address</label><input type="text" id="txtaddress"><br>
+        <label for="txtemail">Enter Your Email</label><input type="email" id="txtemail"><br> -->
+        <table border="2px" align="center">
+            <tr>
+                <td><label for="txtaddress">Enter Your Address</label> </td>
+                <td><input type="text" id="txtaddress" placeholder="Enter your address" required><span style="color:red">*</span></td>
+            </tr>
+            <tr>
+                <td><label for="txtemail">Enter Your Email</label></td>
+                <td><input type="email" id="txtemail" placeholder="Enter your Email" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="txtmobile">Enter your Mobile number</label></td>
+                <td><input type="numbeer" minlength="10" placeholder="Enter Your Mobile Number" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="txtbirthdate">Enter your birthdate</label></td>
+                <td><input type="date" id="txtbirthdate"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center"colspan="2"><input type="submit"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

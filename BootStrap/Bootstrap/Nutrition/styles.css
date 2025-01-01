@@ -1,0 +1,6 @@
+/* Style for Carousel Images */
+#nutritionCarousel .carousel-item img {
+    width: 100%;               /* Ensure the image fills the width of the container */
+    height: 500px;             /* Set a fixed height for the images */
+    object-fit: cover;         /* Ensures the image covers the area, cropping if necessary */
+}

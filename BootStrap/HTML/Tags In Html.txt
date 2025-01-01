@@ -1,0 +1,16 @@
+	Tags In Html
+1)	Html tag
+2)	Head tag
+3)	Title tag
+4)	Body tag
+5)	<br>tag
+6)	<i> tag
+7)	<b>tag
+8)	<p> tag
+9)	<ins> tag
+10)	<em> tag
+11)	<strong >tag
+12)	<strike> Tag or <s> Tag
+13)	<sub> tag
+14)	<sup>tag
+15)	
