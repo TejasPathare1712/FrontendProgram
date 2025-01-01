@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorList</title>
+</head>
+<body>
+    
+    <label for="">Please Enter Your Favourite Color</label>
+    <input type="text" id="txtcolor">
+    <button id="btn">Add to list</button>
+    <select name="" id="colorlist"></select>
+    <script>
+        
+        let b1=document.getElementById("btn")
+        b1.onclick=f1
+        let elem = document.getElementById("colorlist")
+        function f1(){
+            let cn = document.getElementById("txtcolor").value
+            
+            elem.innerHTML+="<option>"+cn+"</option>"
+        }
+    </script>
+    <!--8 rows 8 column-->
+</body>
+</html>

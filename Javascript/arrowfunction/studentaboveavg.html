@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Above average score</title>
+</head>
+<body>
+    <script>
+        score =[76,87,52,49,72]
+        average = score.reduce((m1,m2)=>m1+m2)/score.length
+        //document.write(average)
+        aboveavg = score.filter(score =>score>average)
+        document.write(aboveavg)
+    </script>
+</body>
+</html>

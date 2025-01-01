@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Event handling </title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter Your Address</td>
+            <td><input type="text" id="txtorginal"></td>
+        </tr>
+        <tr>
+            <td>Same Address</td>
+            <td>
+                <input type="text" name="" disabled id="txtrepeat"></td>
+        </tr>
+    </table>
+    <script>
+        function f1(){
+            let txtorg = document.getElementById("txtorginal").value
+           // let txtrept= document.getElementById("txtrepeat").value
+           document.getElementById("txtrepeat").value=txtorg
+        }
+        let elem = document.getElementById("txtorginal")
+        elem.onkeyup = f1
+    </script>
+</body>
+</html>

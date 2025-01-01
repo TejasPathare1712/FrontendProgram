@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><label>Enter the Roll </label></td>
+                <td><input type="text" id="txtroll"></td>
+            </tr>
+ 
+            <tr>
+                <td><lable>Enter the Name </lable></td>
+                <td><input type="text" id="txtname"></td>
+            </tr>
+ 
+            <tr>
+                <td><lable>Enter the Address </lable></td>
+                <td><input type="text" id="txtaddress"></td>
+            </tr>
+ 
+            <tr>
+                <td><lable>Enter the Mobile </lable></td>
+                <td><input type="text" id="txtmobile"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnadd">Add to Table</button></td>
+            </tr>
+        </table>
+ 
+    </form>
+    <table border="2" id="tbldata">
+        <tr>
+            <th>Roll </th>
+            <th>Name </th>
+            <th>Address </th>
+            <th>Mobile </th>
+        </tr>
+    </table>
+ 
+    <script>
+        function f1(){
+            event.preventDefault()
+            let r = document.getElementById("txtroll").value
+            let n = document.getElementById("txtname").value
+            let a = document.getElementById("txtaddress").value
+            let m = document.getElementById("txtmobile").value
+            tbl.innerHTML+= "<tr><td>"+ r + "</td><td>"+ n +"</td><td>" + a + "</td><td>"+ m +"</td></tr>"
+        }
+        let tbl = document.getElementById("tbldata")
+        let elem = document.getElementById("btnadd")
+        elem.onclick= f1
+    </script>
+</body>
+</html>

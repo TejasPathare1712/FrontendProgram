@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        //Javascript Object
+      /*  s1 = {
+            "name":"Tejas",
+            "address":"Pune",
+            "Phone":9767512879
+        }
+        //JSON.stringify() converts a javaScript Object Into a JSON Format String
+        //It can be easily transferd over network to any language application
+        jsonstring = JSON.stringify(s1)
+        document.write("JSON String: "+ jsonstring)
+        //JSON.Parse For covnerting JSON object into javascript object*/
+        s2 = '{"author":"P.L.Deshpande","title":"Vyakti ani Valli"}'
+        jsobject = JSON.parse(s2)
+        document.write(jsobject.title)
+        document.write(jsobject.author)
+
+    </script>
+</body>
+</html>

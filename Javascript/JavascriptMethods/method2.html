@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method</title>
+</head>
+<body>
+    <script>
+        a = [1,2,3,4,5,6,7,8,9,10]
+        b = [5,6,7,8,9,10,11,12,13]
+        for(no of a){
+            document.write("<br>"+no)
+        }
+        //unshift method adds element at beginning
+        a.unshift(100)
+        document.write("<br>"+no)
+        //Push method adds the element at last
+        a.push(11)
+        document.write("<br> Array elements after push method")
+        for(no of a){
+            document.write("<br>"+no)
+        }
+        //pop method will remove the last element of array
+        a.pop()
+        document.write("<br> Array element after pop")
+        for(no of a){
+            document.write("<br>"+no)
+        }
+        //shift method remove the first element of array
+        a.shift()
+        document.write("<br>Array Element after shift method")
+        for(no of a){
+            document.write("<br>"+no)
+        }
+        //splice (startindex,noofelementstodelete,all elements to insert)
+        a.splice(3,2,100,200,300,400)
+        for(no of a){
+            document.write("<br>"+no)
+        }
+        //slice method give any subset of array
+        a.slice(4,7)
+        document.write("<br>Array Element after slice")
+        for(no of a){
+            document.write("<br>"+no)
+        }
+
+    </script>
+</body>
+</html>

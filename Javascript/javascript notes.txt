@@ -1,0 +1,4 @@
+javascript
+client side scripting language
+livescript is the first name of javascript
+EcmaScript

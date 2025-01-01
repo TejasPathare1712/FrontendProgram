@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        tr{
+            height: 80px;
+            width: 80px;
+            border:2px solid black;
+            
+        }
+        td{
+            height: 80px;
+            width: 80px;
+            border:2px solid black;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        tr:nth-child(odd) td:nth-child(odd){
+            background-color: black;
+        }
+        tr:nth-child(even) td:nth-child(even){
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <table id="chessboard">
+         
+    </table>
+    <script>
+        let elem = document.getElementById("chessboard")
+        s1=""
+        for(i=1;i<=8;i++){
+            s1+="<tr>"
+                for(j=1;j<=8;j++){
+                    s1+="<td>"+j+"</td>"
+                }
+                s1+="</tr>"
+        }
+        elem.innerHTML=s1
+
+    </script>
+</body>
+</html>

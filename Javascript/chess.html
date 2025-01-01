@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        tr {
+            height: 80px;
+        }
+        td {
+            width: 80px;
+            height: 80px;
+        }
+        .black {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+   
+    <table id="chessboard" border="2">
+         
+    </table>
+    <script>
+        let elem = document.getElementById("chessboard");
+        for (let i = 0; i < 8; i++) {
+            let row = "<tr>";
+            for (let j = 0; j < 8; j++) {
+                if ((i + j) % 2 === 0) {
+                    row += '<td class="white"></td>';
+                } else {
+                    row += '<td class="black"></td>';
+                }
+            }
+            row += "</tr>";
+            elem.innerHTML += row;
+        }
+    </script>
+</body>
+</html>

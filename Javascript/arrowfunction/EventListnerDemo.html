@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Demo</title>
+</head>
+<body>
+    <p id="p1">This is a sample paragraph </p>
+    <button id="btn">Click Here</button>
+    <script>
+        v1 = document.getElementById("btn")
+        v2 = document.getElementById("p1")
+       
+        // event handler in Javascript
+ 
+       // v1.onclick = f1
+       // v1.onclick = f2
+ 
+      /*  v1.addEventListener("click",f1)
+        v1.addEventListener("click",f2)*/
+        v1.addEventListener("click", () => {
+            v2.style.backgroundColor="yellow"
+            v2.style.fontSize="25px"
+            v2.style.border="5px solid red"
+        })
+        v1.addEventListener("click", () =>{
+            v2.style.color="red"
+            v2.style.fontSize="40px"
+            v2.style.textShadow="5px 5px 10px yellow"
+        })
+ 
+       /* function f1(){
+            v2.style.backgroundColor="yellow"
+            v2.style.fontSize="25px"
+            v2.style.border="5px solid red"
+        } */
+       /* function f2(){
+            v2.style.color="red"
+            v2.style.fontSize="40px"
+            v2.style.textShadow="5px 5px 10px yellow"
+        }*/
+    </script>
+</body>
+</html>

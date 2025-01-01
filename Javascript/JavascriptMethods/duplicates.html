@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicates from array</title>
+</head>
+<body>
+    <script>
+        a1=[45,87,98,23,13,45,13,86]
+        rd = (a1) =>{
+            t=[]
+            for(no of a1){
+                if(!t.includes(no)){
+                    t.push(no)
+                }
+                 
+
+            }
+            //for(no of t){
+              //  document.write("<br>"+no)
+            //}
+            return t
+        }
+        na = rd(a1)
+        for(no of na){
+            document.write("<br>"+no)
+        }
+    </script>
+</body>
+</html>

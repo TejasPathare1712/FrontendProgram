@@ -1,0 +1,28 @@
+/* Custom Styles */
+
+/* Hero section customization */
+.hero-section {
+    background: url('https://via.placeholder.com/1200x400/eeeeee/333333?text=Book+Summaries') no-repeat center center;
+    background-size: cover;
+    color: #333;
+  }
+  
+  .hero-section h1,
+  .hero-section p {
+    color: #000;
+  }
+  
+  /* Card styles */
+  .card {
+    margin-bottom: 2rem;
+  }
+  
+  /* Show/Hide summary text */
+  .summary {
+    display: none; /* hidden by default */
+  }
+  
+  .btn-toggle {
+    margin-top: 1rem;
+  }
+  

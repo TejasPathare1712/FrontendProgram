@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter function in Javascripts</title>
+</head>
+<body>
+    <script>
+        a1 =[10,20,30,45,50,60,77,80,99,100]
+       /* function f1(no){
+            if(no%2==0)
+                return true
+            else
+                return false
+        }*/
+        //a2 = a1.filter(f1)
+        a2 = a1.filter(no=>no%2==0)
+        document.write(a2)
+
+    </script>
+</body>
+</html>

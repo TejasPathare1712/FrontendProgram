@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators In JavaScripts</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+       // a=Number(prompt("Enter any Number"))
+       // b=Number(prompt("Enter Second Number"))
+       a=parseInt(prompt("Enter any Number"))
+       b=parseInt(prompt("Enter second number"))
+        //alert(a+b)
+        //document.write(a+b)
+        var elem = document.getElementById("p1")
+        elem.innerHTML="Addition of number :"+(a+b)
+        elem.innerHTML=elem.innerHTML+"<br>Subtraction of number :"+(a-b)
+        elem.innerHTML=elem.innerHTML+"<br>Multiplication of number :"+(a*b)
+        elem.innerHTML=elem.innerHTML+"<br>Division of number :"+(a/b)
+    </script>
+</body>
+</html>
